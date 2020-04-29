@@ -4,11 +4,10 @@ const API_KEY = '0f33f5c78acf44e7d38b5f6706f6f59d';
 const londonCityID = '2643744';
 const bristolCityID = '4749005';
 const romeCityID = '4219762';
-// const url = `http://api.openweathermap.org/data/2.5/group?id=${londonCityID},${bristolCityID},${romeCityID}&units=metric&appid=${API_KEY}`;
 
 class Main extends Component {
     state = {
-        weather: []
+        allWeather: []
     }
 
     async componentDidMount() {
@@ -16,6 +15,8 @@ class Main extends Component {
         const data = await response.json();
         const results = data.list;
         console.log(results);
+        // this.setState({ allWeather: results });
+        // console.log(this.state.allWeather);
 
         for (let i = 0; i < results.length; i++) {
             console.log(
@@ -27,7 +28,7 @@ class Main extends Component {
         }
     }
 
-    // //Using Sam's Mars fetch API
+    // //Using Sam's fetch API suggestion (Mars)
     // fetch("http://api.openweathermap.org/data/2.5/group?id=2643744,4749005,4219762&units=metric&appid=0f33f5c78acf44e7d38b5f6706f6f59d")
     //     .then(response => response.json())
     //     .then(data => console.log(data));
@@ -36,14 +37,15 @@ class Main extends Component {
     //     });
 
     // componentDidMount() {
-    //     fetch(url)
+    //     fetch(`http://api.openweathermap.org/data/2.5/group?id=${londonCityID},${bristolCityID},${romeCityID}&units=metric&appid=${API_KEY}`)
     //     .then(response => response.json())
     //     .then(data => console.log(data.list));
     // }
 
     render() {
         return (
-            <section></section>
+            <div>
+            </div>
         )
     }
 }
