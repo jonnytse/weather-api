@@ -10,6 +10,7 @@ class App extends Component {
       <div className={styles.App}>
         <Header />
         <Routes />
+        <h1>Hello</h1>
       </div>
     );
   }  
