@@ -1,3 +1,39 @@
+### The test includes 3 main challenges: 
+
+1. Weather API 
+2. One Question Quiz
+3. Football Team Organiser
+
+Note. Please have these challenges all in one app using routing to navigate between them.  
+
+
+## Weather Cards
+
+* Api Doc: https://openweathermap.org/current
+* Api Key: 0f33f5c78acf44e7d38b5f6706f6f59d
+
+
+#### Using the public OpenWeatherMap API, you need to build three cards displaying the current weather data for:
+
+* City of London (city_id: 2643744)
+* City of Bristol (city_id: 4749005)
+* Rome (city_id: 4219762)
+
+
+#### The cards need to display: 
+
+1. Temperature
+2. Humidity
+3. Minimum temperature at the moment 
+4. Maximum temperature at the moment
+
+Default is Kelvin, but we love Celsius so can you change the measurement please.  We're interested to see some of your styling skills so please use this challenge to showcase them!
+
+
+***************************************************************** 
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
