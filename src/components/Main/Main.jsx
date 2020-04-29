@@ -26,6 +26,12 @@ class Main extends Component {
                 results[i].main.temp_max,
             )
         }
+        
+        for (let i = 0; i < results.length; i++) {
+            let card = document.createElement('div')
+            card.innerHTML = `City Name: ${results[i].name}, Humidity: ${results[i].main.humidity}, Min.Temp: ${results[i].main.temp_min}, Max.Temp: ${results[i].main.temp_max}`
+            document.getElementById('container').appendChild(card)
+        }
     }
 
     // //Using Sam's fetch API suggestion (Mars)
