@@ -6,17 +6,12 @@ const bristolCityID = '4749005';
 const romeCityID = '4219762';
 
 class Main extends Component {
-    state = {
-        allWeather: []
-    }
 
     async componentDidMount() {
         const response = await fetch(`http://api.openweathermap.org/data/2.5/group?id=${londonCityID},${bristolCityID},${romeCityID}&units=metric&appid=${API_KEY}`);
         const data = await response.json();
         const results = data.list;
         console.log(results);
-        // this.setState({ allWeather: results });
-        // console.log(this.state.allWeather);
 
         for (let i = 0; i < results.length; i++) {
             console.log(
@@ -26,10 +21,10 @@ class Main extends Component {
                 results[i].main.temp_max,
             )
         }
-        
+
         for (let i = 0; i < results.length; i++) {
             let card = document.createElement('div')
-            card.innerHTML = `City Name: ${results[i].name}, Humidity: ${results[i].main.humidity}, Min.Temp: ${results[i].main.temp_min}, Max.Temp: ${results[i].main.temp_max}`
+            card.innerHTML = `City Name: ${results[i].name}, Humidity(%): ${results[i].main.humidity}, Min.Temp (C): ${results[i].main.temp_min}, Max.Temp (C): ${results[i].main.temp_max}`
             document.getElementById('container').appendChild(card)
         }
     }
