@@ -1,0 +1,10 @@
+.weatherList {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.weatherCard {
+    background-color: lightgrey;
+    border: solid, 2px, black; //why doesn't this display?
+    padding: 20px;
+}

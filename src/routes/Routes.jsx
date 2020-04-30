@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Router } from '@reach/router';
-import Main from '../components/Main';
+import Weather from '../components/Weather';
 
 class Routes extends Component {
     render() {
         return (
             <Router>
-                <Main path="/" exact />
+                <Weather path="/" exact />
             </Router>
         );
     }
