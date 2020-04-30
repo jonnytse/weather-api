@@ -10,7 +10,7 @@ class App extends Component {
       <div className={styles.App}>
         <Header />
         <Routes />
-        <h3>Presented data extracted from the Open Weather API:  openweathermap.org/current</h3>
+        <h3>Displayed data extracted from the Open Weather API:  openweathermap.org/current</h3>
         <div id="container"></div>
       </div>
     );
