@@ -1,4 +1,4 @@
-### The test includes 3 main challenges: 
+~### The test includes 3 main challenges: 
 
 1. Weather API 
 2. One Question Quiz

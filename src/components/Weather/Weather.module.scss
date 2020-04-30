@@ -5,6 +5,8 @@
 
 .weatherCard {
     background-color: lightgrey;
-    border: solid, 2px, black; //why doesn't this display?
+    border: 2px solid darkgrey;
+    border-radius: 10px;
     padding: 20px;
+    margin-bottom: 20px;
 }
