@@ -5,7 +5,7 @@ class Header extends Component {
     render() {
         return (
             <div className={styles.header}>
-                <h1>Weather API React App practice</h1>
+                <h1>Open Weather API React App practice</h1>
             </div>
         )
     }
