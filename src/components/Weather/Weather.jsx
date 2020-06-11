@@ -63,7 +63,7 @@ class Weather extends Component {
                             <p>Humidity: { dataList.main.humidity }%</p>
                             <p>Min Temp: { dataList.main.temp_min }°C</p>
                             <p>Max Temp (C): { dataList.main.temp_max }°C</p>
-                        </div>
+                         </div>
                     ) 
                 }) }
             </div>
